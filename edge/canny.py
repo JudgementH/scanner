@@ -19,3 +19,4 @@ edge = cv2.Canny(blur, 50, 150)
 print(edge.shape)
 cv2.imshow("canny", edge)
 cv2.waitKey()
+#
