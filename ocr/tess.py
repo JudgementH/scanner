@@ -39,5 +39,5 @@ def image_to_string(img_src):
 
 
 if __name__ == '__main__':
-    url = r"../img/9.png"
+    url = r"../img/12.png"
     print(image_to_string(url))

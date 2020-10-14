@@ -47,13 +47,12 @@ def getOutline(img_src):
     res = cv2.multiply(img, 0)
     points = points.reshape(4, 2)
     cv2.drawContours(res, [points], -1, (255, 255, 255), 2)
-    cv2.imshow("1",res)
     res = transform.four_point_transform(img, points)
 
     return res
 
 
 if __name__ == '__main__':
-    outline = getOutline("../img/bill2.jpg")
+    outline = getOutline("../img/12.png")
     cv2.imshow("outline", outline)
     cv2.waitKey()
