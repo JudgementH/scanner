@@ -10,7 +10,7 @@ from PIL import Image
 import numpy as np
 import cv2
 import pytesseract
-from edge import edge
+from graphic import edge
 
 pytesseract.pytesseract.tesseract_cmd = r"E:\Program Files\Tesseract-OCR\tesseract.exe"
 
@@ -39,5 +39,5 @@ def image_to_string(img_src):
 
 
 if __name__ == '__main__':
-    url = r"../img/12.png"
+    url = r"../img/originImage.jpg"
     print(image_to_string(url))

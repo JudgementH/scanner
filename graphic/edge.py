@@ -7,8 +7,7 @@
 __author__ = 'Judgement'
 
 import cv2
-import numpy as np
-from perspective import transform
+from graphic import transform
 
 
 def getOutline(img_src):
@@ -53,6 +52,6 @@ def getOutline(img_src):
 
 
 if __name__ == '__main__':
-    outline = getOutline("../img/12.png")
+    outline = getOutline("../img/originImage.jpg")
     cv2.imshow("outline", outline)
     cv2.waitKey()
